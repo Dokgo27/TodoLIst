@@ -1,6 +1,6 @@
-package todo.todospring.todoModel;
+package todo.todospring.model;
 
-public class writeInfo {
+public class WriteInfo {
 
     private String title;
     private String content;

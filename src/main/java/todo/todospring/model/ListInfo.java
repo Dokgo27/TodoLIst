@@ -1,6 +1,6 @@
-package todo.todospring.todoModel;
+package todo.todospring.model;
 
-public class listInfo {
+public class ListInfo {
     private int pageNum;
     private int pageInterval;
 

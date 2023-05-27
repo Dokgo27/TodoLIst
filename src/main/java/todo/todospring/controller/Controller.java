@@ -1,33 +1,29 @@
-package todo.todospring.todoController;
+package todo.todospring.controller;
 
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-import todo.todospring.todoModel.listInfo;
-import todo.todospring.todoModel.writeInfo;
+import todo.todospring.model.ListInfo;
+import todo.todospring.model.WriteInfo;
 
-import java.time.LocalDate;
-
-@Controller
-public class todoController {
+@org.springframework.stereotype.Controller
+public class Controller {
     @RequestMapping(value="todo/list",method = RequestMethod.GET)
     @ResponseBody
-    public listInfo list(listInfo Test){
+    public ListInfo list(ListInfo Test){
         return Test;
     }
     @RequestMapping(value="todo/write",method = RequestMethod.POST)
     @ResponseBody
-    public writeInfo write_list(writeInfo Test){
+    public WriteInfo write_list(WriteInfo Test){
         return Test;
     }
     @RequestMapping(value="todo/write/{num}",method = RequestMethod.GET)
     @ResponseBody
-    public writeInfo get_write(writeInfo Test){
+    public WriteInfo get_write(WriteInfo Test){
         return Test;
     }
     @RequestMapping(value="todo/write/{num}",method = RequestMethod.DELETE)
     @ResponseBody
-    public writeInfo delete_write(writeInfo Test){
+    public WriteInfo delete_write(WriteInfo Test){
         return Test;
     }
 }
