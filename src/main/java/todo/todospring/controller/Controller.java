@@ -8,23 +8,23 @@ import todo.todospring.model.WriteInfo;
 public class Controller {
     @RequestMapping(value="todo/list",method = RequestMethod.GET)
     @ResponseBody
-    public ListInfo list(ListInfo Test){
-        return Test;
+    public ListInfo list(ListInfo test){
+        return test;
     }
     @RequestMapping(value="todo/write",method = RequestMethod.POST)
     @ResponseBody
-    public WriteInfo write_list(WriteInfo Test){
-        return Test;
+    public WriteInfo write_list(WriteInfo test){
+        return test;
     }
     @RequestMapping(value="todo/write/{num}",method = RequestMethod.GET)
     @ResponseBody
-    public WriteInfo get_write(WriteInfo Test){
-        return Test;
+    public WriteInfo get_write(WriteInfo test){
+        return test;
     }
     @RequestMapping(value="todo/write/{num}",method = RequestMethod.DELETE)
     @ResponseBody
-    public WriteInfo delete_write(WriteInfo Test){
-        return Test;
+    public WriteInfo delete_write(WriteInfo test){
+        return test;
     }
 }
 
